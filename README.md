@@ -43,37 +43,40 @@ My work sits at the intersection of **AI engineering, backend systems, and produ
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## Current Projects
+## Projects
 
-### [Clausewise — AI Contract Review](https://github.com/ganesh12456/Clausewise) · *In progress*
-A private contract-review workspace for comparing agreements, checking clauses against company standards, tracking obligations, and reviewing AI-assisted answers with source quotations.
+### Surge-FAQ-Chatbot — Agentic RAG Support Desk · *Feb 2026 – Apr 2026*
 
-- **Implemented:** document upload, paragraph comparison, policy-rule checks, recorded review decisions, calendar reminders, and Gemini-powered questions with source-quote validation.
-- **Stack:** Next.js, Zoho Catalyst Data Store / Stratus / AppSail, Gemini.
-- **Still on the roadmap:** OCR for scanned PDFs, vector-based semantic search, and automated notifications.
+**AI Engineer project | Surge Software Solutions**
 
-### [Wynlo — Wind Forecast Decision Workspace](https://github.com/ganesh12456/wynlo) · *Historical-data pilot*
-A decision-support pilot for reviewing **UK wind-generation forecasts** at the information cutoff available to a day-ahead procurement team.
+Built a document-grounded customer support assistant with a multi-agent **supervisor → search → verify → escalate** workflow.
 
-- **Built:** a dynamic Next.js interface with a Python/FastAPI backend for historical forecast selection, comparison against actual generation, source audits, and CSV exports.
-- **Stack:** Python, FastAPI, Next.js, React, Docker.
-- **Scope:** uses a frozen January 2026 Elexon data snapshot; it is **not** a live forecasting or trading platform.
+- Orchestrated LangGraph agents to retrieve relevant document evidence, verify answers, and escalate cases that require human review.
+- Implemented five response safeguards: **groundedness, prompt injection detection, PII filtering, hallucination detection, and compliance screening**.
+- Developed real-time streaming, ingestion of **PDF, Word, Excel, CSV, and Markdown** files, and human handoff for difficult cases.
+- **Tech:** LangGraph, FastAPI, React, Pinecone, PostgreSQL, OpenRouter / Gemini / NVIDIA models, Docker Compose.
 
-## Selected Projects
+### AI Security Incident Investigator · *May 2026 – Jul 2026*
 
-### [SignalDesk — Security Incident Investigator](https://github.com/ganesh12456/ai-security-incident-investigator)
-A browser-based investigation workspace that turns imported security logs into correlated events, evidence-linked findings, UTC timelines, and exportable reports.
+**AI Engineer project | Surge Software Solutions**
 
-- Supports CSV, JSON, NDJSON, and JSONL input, with browser-local record storage.
-- Combines event-correlation rules with a small local classifier; investigation findings reference the imported records.
-- **Demo:** [Open SignalDesk](https://ai-security-incident-zvtkamcv.onslate.in/).
+Developed an AI-assisted security investigation workflow to help analysts understand alerts and produce evidence-backed incident timelines.
 
-### [Real-Time DDoS Detection Pipeline](https://github.com/ganesh12456/Real-Time-DDoS-Detection-Pipeline)
-An end-to-end ML project for classifying DDoS traffic from benchmark network-flow data.
+- Worked on **alert classification, event correlation, threat intelligence search, and suspicious activity investigation**.
+- Structured investigation findings into timelines and incident reports with severity assessments and recommended response actions.
+- **Resume project stack:** Python, FastAPI, Elasticsearch, PostgreSQL, LLMs, LangGraph.
+- **Related public implementation:** [SignalDesk — browser-based security investigation workspace](https://github.com/ganesh12456/ai-security-incident-investigator), which uses a different, local-first architecture.
 
-- Includes data preprocessing, feature engineering, LightGBM model training, and a FastAPI inference service.
-- Provides a Gradio dashboard for exploring predictions and model results.
-- **Stack:** Python, LightGBM, Scikit-learn, FastAPI, Gradio.
+### AI Contract Risk & Negotiation Assistant · *Aug 2026 – Present*
+
+**AI Engineer project | Surge Software Solutions · In progress**
+
+Building a contract intelligence application to compare agreements against company policies and support review of risky or unclear terms.
+
+- Developing **multi-contract upload, clause extraction, risky-term detection, contract comparison, and obligation tracking**.
+- Working toward **RAG-based semantic search with supporting citations, suggested clause revisions, and human review workflows**.
+- **Resume project architecture:** Next.js, Python, LLMs, PostgreSQL / pgvector, OCR.
+- **Repository:** [Clausewise](https://github.com/ganesh12456/Clausewise) — the current Next.js/Zoho Catalyst implementation has document upload, rule-based checks, comparison, and source-validated AI Q&A; OCR and vector search remain future work.
 
 ## How I Approach AI Engineering
 
